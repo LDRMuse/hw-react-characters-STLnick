@@ -13,7 +13,7 @@ export const CharacterTable = ({ charactersToDisplay }) => {
 
   return (
     <table>
-      <caption>CharacterTable</caption>
+      <caption>Character Table</caption>
       <thead>
         <tr>
           <th>Name</th>
