@@ -1,8 +1,13 @@
 import React from 'react'
 
+import { Character } from './Character'
+
 export const CharacterTable = () => {
 
   return (
-    <h2>CharacterTable</h2>
+    <div>
+      <h2>CharacterTable</h2>
+      <Character />
+    </div>
   )
 }
