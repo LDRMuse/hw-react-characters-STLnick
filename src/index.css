@@ -8,6 +8,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.input {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  transition: box-shadow 0.4s;
+}
+
+.input:focus,
+.input:hover {
+  box-shadow: 0 0 3px 3px rgb(83, 4, 83);
+}
+
 /* * Reusuable Classes * */
 
 .flex {
