@@ -32,11 +32,14 @@ export const CharacterDisplay = () => {
     jobInput.value = ''
     nameInput.value = ''
   }
+
+  const filteredCharacters = characters.filter(({ name }) => name.toLowerCase().includes(filterText.toLowerCase()))
+
   return (
     <div>
       <h2>CharacterDisplay</h2>
       <FilterBar handler={handleFilterTextChange} text={filterText} />
-      <CharacterTable charactersToDisplay={characters} />
+      <CharacterTable charactersToDisplay={filteredCharacters} />
       <Form handler={handleFormSubmit} />
     </div>
   )
