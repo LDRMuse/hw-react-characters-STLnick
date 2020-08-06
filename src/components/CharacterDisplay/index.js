@@ -24,8 +24,10 @@ export const CharacterDisplay = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
+    const jobInput = e.target.querySelector('#job')
+    const nameInput = e.target.querySelector('#name')
 
-    console.log(e.target)
+    setCharacters([...characters, { name: nameInput.value, job: jobInput.value }])
   }
 
   return (
