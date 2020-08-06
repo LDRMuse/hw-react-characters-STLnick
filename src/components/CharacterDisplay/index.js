@@ -22,12 +22,18 @@ export const CharacterDisplay = () => {
     setFilterText(newFilterText)
   }
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+
+    console.log(e.target)
+  }
+
   return (
     <div>
       <h2>CharacterDisplay</h2>
       <FilterBar handler={handleFilterTextChange} text={filterText} />
       <CharacterTable charactersToDisplay={characters} />
-      <Form />
+      <Form handler={handleFormSubmit} />
     </div>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const Form = () => {
+export const Form = ({ handler }) => {
 
   // 2 inputs: 1 name - 1 job --no handler
   // 1 button: submit --needs handler
   return (
-    <form>
+    <form onSubmit={handler}>
       <label htmlFor="name">Name</label>
       <input id="name" type="text" />
       <label htmlFor="job">Job</label>
@@ -13,4 +14,8 @@ export const Form = () => {
       <button type="submit">Add Character</button>
     </form>
   )
+}
+
+Form.propTypes = {
+  handler: PropTypes.func
 }
