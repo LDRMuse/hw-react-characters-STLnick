@@ -6,6 +6,8 @@ import './App.css';
 
 export const App = () => {
   return (
-    <CharacterDisplay />
+    <main className="flex flex--align-center flex--justify-center">
+      <CharacterDisplay />
+    </main>
   );
 }
