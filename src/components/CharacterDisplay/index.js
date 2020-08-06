@@ -7,8 +7,8 @@ import { Form } from './Form'
 import api from 'api'
 
 export const CharacterDisplay = () => {
-  const [filterText, setFilterText] = useState('')
   const [characters, setCharacters] = useState([])
+  const [filterText, setFilterText] = useState('')
 
   useEffect(() => {
     (async () => {
