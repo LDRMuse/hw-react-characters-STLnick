@@ -36,8 +36,7 @@ export const CharacterDisplay = () => {
   const filteredCharacters = characters.filter(({ name }) => name.toLowerCase().includes(filterText.toLowerCase()))
 
   return (
-    <div>
-      <h2>CharacterDisplay</h2>
+    <div className="container flex flex--column flex--align-center">
       <FilterBar handler={handleFilterTextChange} text={filterText} />
       <CharacterTable charactersToDisplay={filteredCharacters} />
       <Form handler={handleFormSubmit} />
