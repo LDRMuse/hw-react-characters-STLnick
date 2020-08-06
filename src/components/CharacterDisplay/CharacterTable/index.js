@@ -5,13 +5,16 @@ import { Character } from './Character'
 
 export const CharacterTable = ({ charactersToDisplay }) => {
 
-  console.log('Inside CharTable:')
-  console.log(charactersToDisplay)
+  const renderCharacters = () => {
+    return charactersToDisplay.map(({ job, name }, i) => {
+      return <Character job={job} key={i} name={name} />
+    })
+  }
 
   return (
     <div>
       <h2>CharacterTable</h2>
-      <Character />
+      {renderCharacters()}
     </div>
   )
 }
