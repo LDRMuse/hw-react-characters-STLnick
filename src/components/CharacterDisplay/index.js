@@ -26,7 +26,7 @@ export const CharacterDisplay = () => {
     <div>
       <h2>CharacterDisplay</h2>
       <FilterBar handler={handleFilterTextChange} text={filterText} />
-      <CharacterTable />
+      <CharacterTable charactersToDisplay={characters} />
       <Form />
     </div>
   )
