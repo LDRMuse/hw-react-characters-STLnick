@@ -28,6 +28,10 @@ export const CharacterDisplay = () => {
     const nameInput = e.target.querySelector('#name')
 
     setCharacters([...characters, { name: nameInput.value, job: jobInput.value }])
+
+    // Reset input fields
+    jobInput.value = ''
+    nameInput.value = ''
   }
 
   return (
