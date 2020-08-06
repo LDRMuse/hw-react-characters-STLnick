@@ -8,11 +8,12 @@ import api from 'api'
 
 export const CharacterDisplay = () => {
   const [filterText, setFilterText] = useState('')
+  const [characters, setCharacters] = useState([])
 
   useEffect(() => {
     (async () => {
       const data = await api.index()
-      console.log(data)
+      setCharacters(data)
     })()
   }, [])
 
