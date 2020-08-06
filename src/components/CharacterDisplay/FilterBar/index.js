@@ -6,7 +6,7 @@ export const FilterBar = ({ handler, text }) => {
   return (
     <div className="flex flex--column flex--align-center">
       <label htmlFor="filter">Filter By Name</label>
-      <input onChange={handler} type="text" id="filter" value={text} />
+      <input className="input" onChange={handler} type="text" id="filter" value={text} />
     </div>
   )
 }

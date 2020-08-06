@@ -11,9 +11,9 @@ export const Form = ({ handler }) => {
       onSubmit={handler}
     >
       <label htmlFor="name">Name</label>
-      <input id="name" type="text" />
+      <input className="input" id="name" type="text" />
       <label htmlFor="job">Job</label>
-      <input id="job" type="text" />
+      <input className="input" id="job" type="text" />
       <button type="submit">Add Character</button>
     </form>
   )
