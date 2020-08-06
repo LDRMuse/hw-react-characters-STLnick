@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 export const Character = ({ job, name }) => {
 
   return (
-    <div>
-      <h3>{name}</h3>
-      <p>Job: {job}</p>
-    </div>
+    <tr>
+      <td>{name}</td>
+      <td>{job}</td>
+    </tr>
   )
 }
 
