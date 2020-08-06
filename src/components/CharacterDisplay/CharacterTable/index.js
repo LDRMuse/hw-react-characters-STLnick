@@ -12,10 +12,18 @@ export const CharacterTable = ({ charactersToDisplay }) => {
   }
 
   return (
-    <div>
-      <h2>CharacterTable</h2>
-      {renderCharacters()}
-    </div>
+    <table>
+      <caption>CharacterTable</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Job</th>
+        </tr>
+      </thead>
+      <tbody>
+        {renderCharacters()}
+      </tbody>
+    </table>
   )
 }
 
